@@ -1,8 +1,53 @@
-# 📉 Churn Customer Analysis
+# 📉 Customer Churn Analysis
 
 ## 📌 Project Overview
 
-This project analyzes customer churn using the Superstore dataset. The goal is to identify inactive customers, understand churn behavior across regions and customer segments, and estimate the revenue impact caused by customer churn.
+This project analyzes customer churn using the Superstore dataset. The goal is to identify inactive customers, understand churn behavior across customer segments and regions, and estimate the business revenue impact caused by customer churn.
+
+The analysis was performed using SQL for data extraction and transformation, while the dashboard visualization was built using Google Looker Studio to provide interactive business insights.
+
+---
+
+# 📷 Dashboard Preview
+
+![Churn Dashboard Preview](images/churn-dashboard.png)
+
+🔗 **Interactive Dashboard:**  
+https://datastudio.google.com/reporting/95049cc4-28bc-4d2b-a046-796531b22173
+
+---
+
+# 🛠️ Tools & Technologies Used
+
+- SQL
+- Google Looker Studio
+- GitHub
+- Superstore Dataset
+
+---
+
+# 📁 Project Structure
+
+```bash
+📦 customer-churn-analysis
+ ┣ 📂 images
+ ┃ ┗ 📜 churn-dashboard.png
+ ┣ 📜 churn_analysis.sql
+ ┣ 📜 README.md
+ ┗ 📜 superstore_dataset.csv
+```
+
+---
+
+# 📊 Business Objectives
+
+The project aims to:
+
+- Identify churned and at-risk customers
+- Analyze churn trends across customer segments
+- Evaluate regional churn performance
+- Measure revenue loss caused by customer churn
+- Provide business recommendations for customer retention
 
 ---
 
@@ -54,11 +99,11 @@ GROUP BY churn_status;
 
 ## Insight
 
-Churned customers have the highest number of customers, accounting for nearly 55% of all customers who have been inactive for more than 60 days.
+Churned customers account for nearly 55% of all customers, indicating a high customer inactivity rate.
 
-At-risk customers represent over 20% of total customers, meaning about 1 in every 5 customers may soon become churned if no action is taken.
+At-risk customers represent over 20% of the customer base, meaning approximately 1 in every 5 customers may soon churn if no retention action is taken.
 
-This suggests that retention campaigns, discounts, and customer engagement strategies should focus on at-risk customers before they become fully inactive.
+This suggests that customer retention campaigns should prioritize at-risk customers before they become fully inactive.
 
 ---
 
@@ -85,11 +130,7 @@ ORDER BY total_customer DESC;
 
 ## Insight
 
-The Consumer segment has the highest number of customers, making up more than half of the customer base.
-
-Corporate customers follow behind, while Home Office customers represent the smallest customer segment.
-
-This indicates that the business relies heavily on consumer customers, making customer retention within this segment especially important.
+The Consumer segment represents the largest customer group, making customer retention within this segment highly important for long-term revenue stability.
 
 ---
 
@@ -118,11 +159,13 @@ ORDER BY churn_percentage DESC;
 
 ## Insight
 
-The South region has the highest churn rate at 59%, followed closely by the East region at 58%.
+The South and East regions show the highest churn rates, suggesting weaker customer retention performance compared to other regions.
 
-More than half of customers in these regions have become inactive.
-
-This suggests that retention offers, loyalty programs, discounts, and targeted customer engagement campaigns may help reduce customer churn in these regions.
+These regions may benefit from:
+- loyalty programs
+- targeted marketing campaigns
+- personalized offers
+- customer engagement initiatives
 
 ---
 
@@ -149,11 +192,7 @@ GROUP BY segment;
 
 ## Insight
 
-The Consumer segment has the highest number of churned customers with 215 inactive customers.
-
-This may be caused by lower customer loyalty and a higher number of one-time buyers within the segment.
-
-The Corporate segment also shows a significant number of churned customers, suggesting that retention campaigns and personalized offers may help improve customer retention across both segments.
+The Consumer segment has the highest number of churned customers, suggesting that improving customer loyalty within this segment could significantly reduce overall churn.
 
 ---
 
@@ -178,26 +217,34 @@ GROUP BY churn_status;
 
 ## Insight
 
-Churned customers account for over $1.14 million in lost revenue, representing a significant portion of total business revenue.
-
-This highlights the importance of improving customer retention strategies, especially for at-risk customers, before they become fully churned customers.
+Churned customers account for over $1.14 million in lost revenue, highlighting the significant financial impact of customer inactivity on business performance.
 
 ---
 
-# 📌 Final Business Recommendations
+# 📌 Key Findings
 
-Based on the analysis, the following actions are recommended:
+- More than half of customers are churned
+- Consumer customers contribute the highest churn volume
+- South and East regions experience the highest churn rates
+- Churned customers generated over $1.14 million in lost revenue
+- At-risk customers represent a major retention opportunity
 
-- Focus retention campaigns on at-risk customers before they become churned
-- Improve customer engagement strategies in South and East regions
-- Introduce loyalty programs for Consumer and Corporate customer segments
+---
+
+# 📌 Business Recommendations
+
+Based on the analysis, the following strategies are recommended:
+
+- Focus retention campaigns on at-risk customers
+- Improve customer engagement in high-churn regions
+- Introduce loyalty programs for Consumer and Corporate customers
 - Use discounts and personalized offers to reactivate inactive customers
-- Monitor churn trends regularly to reduce future revenue loss
+- Continuously monitor churn metrics through dashboards
 
 ---
 
 # 🧠 Conclusion
 
-This churn analysis provides insights into customer inactivity, revenue loss, and regional churn behavior.
+This churn analysis project provides insights into customer inactivity, regional churn patterns, and revenue loss caused by churned customers.
 
-The analysis helps businesses identify high-risk customer groups and supports data-driven decision-making for improving customer retention and long-term business performance.
+The analysis supports data-driven business decision-making and demonstrates how SQL and dashboard visualization tools can be used to solve real-world business problems.
