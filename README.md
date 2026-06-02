@@ -10,7 +10,7 @@ The analysis was performed using SQL for data extraction and transformation, whi
 
 # 📷 Dashboard Preview
 
-![Churn Dashboard Preview](images/churn-dashboard.png)
+![Churn Dashboard Preview](images/Dashboard_image/churn-dashboard.png)
 
 🔗 **Interactive Dashboard:**  
 https://datastudio.google.com/reporting/95049cc4-28bc-4d2b-a046-796531b22173
